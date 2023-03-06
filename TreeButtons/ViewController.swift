@@ -12,17 +12,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondButton: ChangeButton!
     @IBOutlet weak var thirdButton: ChangeButton!
     
-    @IBAction func firstButtonTap(_ sender: UIButton) {
-        firstButton.animateButton(sender)
+    @IBAction func firstButtonDown(_ sender: UIButton) {
+        firstButton.animateButtonDown(sender)
     }
     
-    @IBAction func secondButtonTap(_ sender: UIButton) {
-        secondButton.animateButton(sender)
+    @IBAction func firstButtonTouchUpInside(_ sender: UIButton) {
+        firstButton.animateButtonUp(sender)
     }
     
-    @IBAction func thirdButtonTap(_ sender: UIButton) {
-        thirdButton.animateButton(sender)
+    @IBAction func secondButtonDown(_ sender: UIButton) {
+        secondButton.animateButtonDown(sender)
+    }
+    
+    @IBAction func secondButtonTouchUpInside(_ sender: UIButton) {
+        secondButton.animateButtonUp(sender)
+    }
+    
+    @IBAction func thirdButtonDown(_ sender: UIButton) {
+        thirdButton.animateButtonDown(sender)
         showModalController()
+    }
+    
+    @IBAction func thirdButtonTouchUpInside(_ sender: UIButton) {
+        thirdButton.animateButtonUp(sender)
     }
     
     override func viewDidLoad() {
@@ -54,4 +66,5 @@ class ViewController: UIViewController {
         modalController.view.frame = view.frame
         present(modalController, animated: true, completion: nil)
     }
-}
+    }
+

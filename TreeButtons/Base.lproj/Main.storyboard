@@ -23,7 +23,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="firstButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IDK-gd-3Fr"/>
+                                    <action selector="firstButtonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="StA-3M-e3w"/>
+                                    <action selector="firstButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PM5-yF-pNU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQA-Sj-DRF" customClass="ChangeButton" customModule="TreeButtons" customModuleProvider="target">
@@ -33,7 +34,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="secondButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Czk-SG-bh9"/>
+                                    <action selector="secondButtonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="PXg-KF-3ze"/>
+                                    <action selector="secondButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HID-Ug-qOY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctO-BH-Wfa" customClass="ChangeButton" customModule="TreeButtons" customModuleProvider="target">
@@ -43,7 +45,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="thirdButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SmK-Iy-LuM"/>
+                                    <action selector="thirdButtonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="b2B-Ph-fRL"/>
+                                    <action selector="thirdButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L0D-9D-lMO"/>
                                 </connections>
                             </button>
                         </subviews>
